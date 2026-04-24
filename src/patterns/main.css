@@ -47,8 +47,8 @@ body {
   margin: 14px 0;
 }
 
-.nav-list img {
-  display: block;
+.header__icon {
+  color: var(--color-default-black);
 }
 
 .profile {
