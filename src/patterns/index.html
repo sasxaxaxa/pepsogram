@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8"/>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <link rel="stylesheet" href="global.css"/>
+  <link rel="stylesheet" href="reset.css"/>
   <link rel="stylesheet" href="main.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>pepsik</title>
@@ -17,37 +19,49 @@
         <ul class="nav-list">
           <li>
             <a href="#">
-              <img src="../assets/icons/home-icon.svg" alt="Home">
+              <svg width="36" height="36" class="header__icon" role="img" aria-label="Главная">
+                <use xlink:href="/src/assets/icons/sprite.svg#icon-home"></use>
+              </svg>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img src="../assets/icons/gallery-icon.svg" alt="Gallery">
+              <svg width="36" height="36" class="header__icon" role="img" aria-label="Галерея">
+                <use xlink:href="/src/assets/icons/sprite.svg#icon-gallery"></use>
+              </svg>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img src="../assets/icons/like-icon.svg" alt="Like">
+              <svg width="36" height="36" class="header__icon" role="img" aria-label="Понравившееся">
+                <use xlink:href="/src/assets/icons/sprite.svg#icon-like"></use>
+              </svg>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img src="../assets/icons/community-icon.svg" alt="Community">
+              <svg width="36" height="36" class="header__icon" role="img" aria-label="Сообщество">
+                <use xlink:href="/src/assets/icons/sprite.svg#icon-community"></use>
+              </svg>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img src="../assets/icons/theme-icon.svg" alt="Theme">
+              <svg width="36" height="36" class="header__icon" role="img" aria-label="Смена темы">
+                <use xlink:href="/src/assets/icons/sprite.svg#icon-palette"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </nav>
       <a href="#" class="profile">
-        <img src="../assets/icons/profile-icon.svg" alt="Profile">
+        <svg width="36" height="36" class="header__icon" role="img" aria-label="Профиль">
+          <use xlink:href="../assets/icons/sprite.svg#icon-user"></use>
+        </svg>
       </a>
     </div>
   </header>
