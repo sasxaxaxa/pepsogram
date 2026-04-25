@@ -1,7 +1,6 @@
-import './styles/main.scss'
-import './patterns/reset.css'
-import './patterns/global.css'
-import './patterns/main.css'
+import './styles/_reset.scss'
+import './styles/_global.scss'
+import './styles/_main.scss'
 import Header from "./components/layouts/Header.tsx";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
