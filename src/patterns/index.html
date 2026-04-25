@@ -24,7 +24,6 @@
               </svg>
             </a>
           </li>
-
           <li>
             <a href="#">
               <svg width="36" height="36" class="header__icon" role="img" aria-label="Галерея">
@@ -32,7 +31,6 @@
               </svg>
             </a>
           </li>
-
           <li>
             <a href="#">
               <svg width="36" height="36" class="header__icon" role="img" aria-label="Понравившееся">
@@ -40,7 +38,6 @@
               </svg>
             </a>
           </li>
-
           <li>
             <a href="#">
               <svg width="36" height="36" class="header__icon" role="img" aria-label="Сообщество">
@@ -48,13 +45,19 @@
               </svg>
             </a>
           </li>
-
-          <li>
-            <a href="#">
+          <li class="theme">
+            <button class="theme-toggle" aria-label="Сменить тему">
               <svg width="36" height="36" class="header__icon" role="img" aria-label="Смена темы">
                 <use xlink:href="/src/assets/icons/sprite.svg#icon-palette"></use>
               </svg>
-            </a>
+            </button>
+            <div class="theme-pill">
+              <button class="btn-color" data-color="yellow" aria-label="Желтая тема"></button>
+              <button class="btn-color" data-color="green" aria-label="Зеленая тема"></button>
+              <button class="btn-color" data-color="red" aria-label="Красная тема"></button>
+              <button class="btn-color" data-color="purple" aria-label="Фиолетовая тема"></button>
+              <button class="btn-color" data-color="orange" aria-label="Оранжевая тема"></button>
+            </div>
           </li>
         </ul>
       </nav>
