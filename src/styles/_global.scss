@@ -7,9 +7,20 @@
   --color-default-white: #FFFAF2;
   --color-default-black: #2E2B2F;
 
-  --br-m: 3.2rem;
-  --br-xl: 10rem;
+  --br-m: 64px;
+  --br-xl: 50%;
   --border-base: 2px solid var(--color-default-black);
   --border-small: 1px solid var(--color-default-black);
 
+  //themes
+  --color-main: var(--color-red);
+}
+
+html {
+  font-size: calc(100vw / 1440 * 10);
+  color: var(--color-default-black);
+
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
