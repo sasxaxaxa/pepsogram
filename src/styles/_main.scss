@@ -1,11 +1,11 @@
 @import "global";
 
 .header {
-  padding: 41px;
+  padding: 4rem;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -13,25 +13,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 38px;
+  gap: 3.8rem;
 }
 
 .nav-pill {
   background: #FFCB66;
-  border-radius: 32px;
-  width: 1098px;
-  height: 64px;
-  border: 2px solid #2E2B2F;
+  border-radius: var(--br-m);
+  width: 109.8rem;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-base);
 }
 
 .nav-list {
   display: flex;
-  gap: clamp(16px, 4vw, 66px);
-  list-style: none;
+  gap: 5.2rem;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  margin: 14px 0;
 }
 
 .header__icon {
@@ -49,6 +49,46 @@
   border: 2px solid #2E2B2F;
 }
 
-.profile img {
-  display: block;
+.button--transparent {
+  background: transparent;
+  color: var(--color-default-black);
+  border: 2px solid transparent;
+}
+.button-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  border-radius: var(--br-m);
+  border: 2px solid transparent;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-header:hover {
+  background: var(--color-default-white);
+  color: var(--color-default-black);
+  border: var(--border-base);
+}
+.button-header .button__icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  aspect-ratio: 1 / 1;
+}
+.button--primary {
+  background: var(--color-yellow);
+  color: var(--color-default-black);
+  border: var(--border-base);
+}
+.button-header--alt {
+  padding: 1.33rem;
+  border-radius: var(--br-m);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-header--alt .button__icon {
+  width: 3.1rem;
+  height: 3.1rem;
+  aspect-ratio: 1 / 1;
+}
+
+.button-header--alt:hover {
+  background: #f8c25a;
 }

@@ -1,30 +1,30 @@
-import {Link} from "react-router-dom";
+import Button from "../ui/Button.tsx";
 
 const headerLinks = [
   {
     href: '/home',
     iconName: 'home',
-    ariaLabel: 'Главная'
+    ariaLabel: 'Главная',
   },
   {
     href: '/gallery',
     iconName: 'gallery',
-    ariaLabel: 'Галерея'
+    ariaLabel: 'Галерея',
   },
   {
     href: '/favourites',
     iconName: 'like',
-    ariaLabel: 'Понравившееся'
+    ariaLabel: 'Понравившееся',
   },
   {
     href: '/community',
     iconName: 'community',
-    ariaLabel: 'Сообщество'
+    ariaLabel: 'Сообщество',
   },
   {
-    href: '/user',
+    href: '/test',
     iconName: 'palette',
-    ariaLabel: 'Смена темы'
+    ariaLabel: 'Смена темы',
   }
 ]
 
@@ -36,15 +36,30 @@ const Header = () => {
           <ul className="nav-list">
             {headerLinks.map(({ href, iconName, ariaLabel }, index) => (
               <li key={index}>
-                <Link to={href}>
-                  <svg width="36" height="36" className="header__icon" role="img" aria-label={`${ariaLabel}`}>
-                    <use href={`/src/assets/icons/sprite.svg#icon-${iconName}`}></use>
-                  </svg>
-                </Link>
+                <Button
+                  href={href}
+                  iconName={iconName}
+                  ariaLabel={ariaLabel}
+                  label=''
+                  mode="transparent"
+                  location="header"
+                  iconSize={36}
+                  iconPosition="before"
+                />
               </li>
             ))}
           </ul>
         </nav>
+        <Button
+          href='profile'
+          iconName='user'
+          ariaLabel='Профиль'
+          label=''
+          mode="primary"
+          location="header--alt"
+          iconSize={31}
+          iconPosition="before"
+        />
       </div>
     </header>
   )
