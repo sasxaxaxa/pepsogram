@@ -6,6 +6,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 body {
   margin: 0;
 }
@@ -71,6 +72,7 @@ body {
   gap: 11px;
   padding: 9px 14px;
 }
+
 .btn-color {
   width: 27.5px;
   height: 27.5px;
