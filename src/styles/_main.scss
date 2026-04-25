@@ -17,7 +17,7 @@
 }
 
 .nav-pill {
-  background: #FFCB66;
+  background: var(--color-main);
   border-radius: var(--br-m);
   width: 109.8rem;
   height: 6.4rem;
@@ -36,17 +36,6 @@
 
 .header__icon {
   color: var(--color-default-black);
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  background: #FFCB66;
-  border-radius: 50%;
-  border: 2px solid #2E2B2F;
 }
 
 .button--transparent {
@@ -74,7 +63,7 @@
   aspect-ratio: 1 / 1;
 }
 .button--primary {
-  background: var(--color-yellow);
+  background: var(--color-main);
   color: var(--color-default-black);
   border: var(--border-base);
 }
