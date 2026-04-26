@@ -88,24 +88,24 @@
 .theme-toggle {
   display: none;
 }
-.btn-color {
+.theme-color {
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 50%;
   border: var(--border-small);
 }
-.btn-color[data-color="yellow"] {
+.theme-color.button--yellow {
   background: var(--color-yellow);
 }
-.btn-color[data-color="green"] {
+.theme-color.button--green {
   background: var(--color-green);
 }
-.btn-color[data-color="red"] {
+.theme-color.button--red {
   background: var(--color-red);
 }
-.btn-color[data-color="purple"] {
+.theme-color.button--purple {
   background: var(--color-purple);
 }
-.btn-color[data-color="orange"] {
+.theme-color.button--orange {
   background: var(--color-orange);
 }
