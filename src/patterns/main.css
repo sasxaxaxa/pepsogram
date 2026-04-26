@@ -57,11 +57,11 @@ body {
   display: block;
 }
 .theme {
-  position: relative;
+  /*position: relative;*/
 }
 .theme-pill {
-  position: absolute;
-  top: 9.25px;
+  /*position: absolute;*/
+  /*top: 9.25px;*/
   width: 209px;
   height: 45.5px;
   background: var(--color-default-white);
