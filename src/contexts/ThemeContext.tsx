@@ -32,4 +32,4 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
       {children}
     </ThemeContext.Provider>
   )
-}
+};

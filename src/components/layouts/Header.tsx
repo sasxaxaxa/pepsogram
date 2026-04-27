@@ -1,4 +1,5 @@
 import Button from "../ui/Button.tsx";
+import ThemeSwitcher from "../ui/ThemeSwitcher.tsx";
 
 const headerLinks = [
   {
@@ -56,6 +57,8 @@ const Header = () => {
                 <button className="header__color-btn" data-color="purple" aria-label="Фиолетовая тема"></button>
                 <button className="header__color-btn" data-color="orange" aria-label="Оранжевая тема"></button>
               </div>
+            <li className="theme">
+              <ThemeSwitcher />
             </li>
           </ul>
         </nav>
