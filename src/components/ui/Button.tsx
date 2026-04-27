@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { type ReactNode, type ElementType } from 'react';
 
-type ButtonMode = 'primary' | 'secondary' | 'transparent';
+type ButtonMode = string;
 type ButtonLocation = string;
 type IconPosition = 'before' | 'after';
 
