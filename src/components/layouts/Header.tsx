@@ -23,7 +23,6 @@ const headerLinks = [
     ariaLabel: 'Сообщество',
   },
   {
-    href: '/test',
     iconName: 'palette',
     ariaLabel: 'Смена темы',
   }
@@ -49,14 +48,6 @@ const Header = () => {
                 />
               </li>
             ))}
-            <li className="header__theme">
-              <div className="header__theme-pill">
-                <button className="header__color-btn" data-color="yellow" aria-label="Желтая тема"></button>
-                <button className="header__color-btn" data-color="green" aria-label="Зеленая тема"></button>
-                <button className="header__color-btn" data-color="red" aria-label="Красная тема"></button>
-                <button className="header__color-btn" data-color="purple" aria-label="Фиолетовая тема"></button>
-                <button className="header__color-btn" data-color="orange" aria-label="Оранжевая тема"></button>
-              </div>
             <li className="theme">
               <ThemeSwitcher />
             </li>
