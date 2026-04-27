@@ -132,3 +132,69 @@
     }
   }
 }
+
+.card {
+  width: 27.8rem;
+  height: 27.8rem;
+  border-radius: 3.2rem;
+  border: var(--border-base);
+  background: var(--color-default-white);
+  overflow: hidden;
+  transition: height 0.3s ease;
+  margin: 0 auto;
+  display: grid;
+
+  &:hover {
+    height: 36.7rem;
+  }
+
+  &__inner {
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    width: 24.6rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 2.4rem;
+  }
+
+  &__content {
+    opacity: 0;
+    padding: 0.5rem;
+  }
+
+  &:hover &__content {
+    opacity: 1;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--black);
+    padding: 1.2rem 0 1.5rem 0;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__date {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #6a676b;
+
+  }
+}
+
+.button--card {
+  .button__icon {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
