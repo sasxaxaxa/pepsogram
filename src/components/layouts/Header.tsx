@@ -32,8 +32,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header__inner">
-        <nav className="nav-pill">
-          <ul className="nav-list">
+        <nav className="header__navigation">
+          <ul className="header__navigation-list">
             {headerLinks.map(({href, iconName, ariaLabel}, index) => (
               <li key={index}>
                 <Button
@@ -48,13 +48,13 @@ const Header = () => {
                 />
               </li>
             ))}
-            <li className="theme">
-              <div className="theme-pill">
-                <button className="btn-color" data-color="yellow" aria-label="Желтая тема"></button>
-                <button className="btn-color" data-color="green" aria-label="Зеленая тема"></button>
-                <button className="btn-color" data-color="red" aria-label="Красная тема"></button>
-                <button className="btn-color" data-color="purple" aria-label="Фиолетовая тема"></button>
-                <button className="btn-color" data-color="orange" aria-label="Оранжевая тема"></button>
+            <li className="header__theme">
+              <div className="header__theme-pill">
+                <button className="header__color-btn" data-color="yellow" aria-label="Желтая тема"></button>
+                <button className="header__color-btn" data-color="green" aria-label="Зеленая тема"></button>
+                <button className="header__color-btn" data-color="red" aria-label="Красная тема"></button>
+                <button className="header__color-btn" data-color="purple" aria-label="Фиолетовая тема"></button>
+                <button className="header__color-btn" data-color="orange" aria-label="Оранжевая тема"></button>
               </div>
             </li>
           </ul>
