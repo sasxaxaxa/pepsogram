@@ -1,5 +1,3 @@
-import Button from "../components/ui/Button.tsx";
-
 const HomePage = () => {
   return (
     <>

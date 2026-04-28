@@ -1,11 +1,12 @@
 @import "global";
 
 .container {
-  padding: 0 12rem;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .header {
-  padding: 4rem 0;
+  padding: 4rem;
 
   &__inner {
     display: flex;
@@ -39,8 +40,6 @@
 }
 
 .button {
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-
   &--transparent {
     background: transparent;
     color: var(--color-default-black);
@@ -60,6 +59,7 @@
     padding: 0.7rem;
     border-radius: var(--br-m);
     border: 2px solid transparent;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       background: var(--color-default-white);
@@ -77,9 +77,10 @@
   &-header--alt {
     padding: 1.33rem;
     border-radius: var(--br-m);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      background: #F5BE53;
+      background: #f8c25a;
     }
 
     .button__icon {
@@ -108,46 +109,21 @@
     border-radius: 50%;
     border: var(--border-small);
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    .button__icon {
-      color: var(--color-default-black);
-    }
-
     &.button {
       &--yellow {
         background: var(--color-yellow);
-
-        &:hover {
-          background: #F5BE53;
-        }
       }
 
       &--green {
         background: var(--color-green);
-
-        &:hover {
-          background: #8DC99D;
-        }
       }
 
       &--red {
         background: var(--color-red);
-
-        &:hover {
-          background: #E28174;
-        }
       }
 
       &--purple {
         background: var(--color-purple);
-
-        &:hover {
-          background: #B189CE;
-        }
       }
 
       &--orange {
@@ -156,6 +132,10 @@
         &:hover {
           background: #EE8E58;
         }
+      }
+
+      &:hover {
+        background: #EE8E58;
       }
     }
   }
