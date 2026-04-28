@@ -110,27 +110,77 @@
     border: var(--border-small);
 
     &.button {
-      &--yellow {
-        background: var(--color-yellow);
-      }
+      &.button {
+        &--yellow {
+          background: var(--color-yellow);
 
-      &--green {
-        background: var(--color-green);
-      }
+          &:hover {
+            background: #F5BE53;
+          }
+        }
 
-      &--red {
-        background: var(--color-red);
-      }
+        &--green {
+          background: var(--color-green);
 
-      &--purple {
-        background: var(--color-purple);
-      }
+          &:hover {
+            background: #8DC99D;
+          }
+        }
 
-      &--orange {
-        background: var(--color-orange);
+        &--red {
+          background: var(--color-red);
+
+          &:hover {
+            background: #E28174;
+          }
+        }
+
+        &--purple {
+          background: var(--color-purple);
+
+          &:hover {
+            background: #B189CE;
+          }
+        }
+
+        &--orange {
+          background: var(--color-orange);
+
+          &:hover {
+            background: #EE8E58;
+          }
+        }
       }
     }
   }
+}
+
+.home-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.h1, h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.hero {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.3rem;
+  }
+
+  &__block--info {
+
+  }
+
 }
 
 .card {
@@ -141,7 +191,6 @@
   background: var(--color-default-white);
   overflow: hidden;
   transition: height 0.3s ease;
-  margin: 0 auto;
   display: grid;
 
   &:hover {
@@ -162,7 +211,7 @@
 
   &__content {
     opacity: 0;
-    padding: 0.5rem;
+    padding-inline: 0.5rem;
   }
 
   &:hover &__content {
@@ -193,8 +242,18 @@
 }
 
 .button--card {
+
   .button__icon {
     width: 2.8rem;
     height: 2.8rem;
+    color: #6A676B;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+
+  &:hover {
+    .button__icon {
+      color: var(--color-default-black);
+    }
   }
 }

@@ -38,6 +38,7 @@ const ThemeSwitcher = () => {
               className={className}
               mode={mode}
               ariaLabel={ariaLabel}
+              iconName='check'
             />
           </li>
         ))}
