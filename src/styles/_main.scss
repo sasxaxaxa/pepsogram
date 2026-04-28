@@ -110,32 +110,46 @@
     border: var(--border-small);
 
     &.button {
-      &--yellow {
-        background: var(--color-yellow);
-      }
+      &.button {
+        &--yellow {
+          background: var(--color-yellow);
 
-      &--green {
-        background: var(--color-green);
-      }
-
-      &--red {
-        background: var(--color-red);
-      }
-
-      &--purple {
-        background: var(--color-purple);
-      }
-
-      &--orange {
-        background: var(--color-orange);
-
-        &:hover {
-          background: #EE8E58;
+          &:hover {
+            background: #F5BE53;
+          }
         }
-      }
 
-      &:hover {
-        background: #EE8E58;
+        &--green {
+          background: var(--color-green);
+
+          &:hover {
+            background: #8DC99D;
+          }
+        }
+
+        &--red {
+          background: var(--color-red);
+
+          &:hover {
+            background: #E28174;
+          }
+        }
+
+        &--purple {
+          background: var(--color-purple);
+
+          &:hover {
+            background: #B189CE;
+          }
+        }
+
+        &--orange {
+          background: var(--color-orange);
+
+          &:hover {
+            background: #EE8E58;
+          }
+        }
       }
     }
   }
