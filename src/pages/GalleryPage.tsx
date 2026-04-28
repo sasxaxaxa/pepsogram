@@ -1,3 +1,5 @@
+import Button from "../components/ui/Button.tsx";
+
 const GalleryPage = () => {
   return (
     <>
