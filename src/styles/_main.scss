@@ -52,6 +52,12 @@
     border: var(--border-base);
   }
 
+  &--white {
+    background: var(--color-default-white);
+    color: var(--color-default-black);
+    border: var(--border-base);
+  }
+
   &-header {
     display: flex;
     justify-content: center;
@@ -89,6 +95,14 @@
       aspect-ratio: 1 / 1;
     }
   }
+
+  &-card__top {
+    padding: 0.8rem;
+    border-radius: var(--br-m);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .theme {
@@ -101,6 +115,21 @@
     gap: 1.1rem;
     padding: 0.9rem 1.4rem;
     margin-left: -3rem;
+
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    li {
+      animation: fadeInScale 0.2s ease forwards;
+      opacity: 0;
+      transform: scale(0.8);
+
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          animation-delay: #{$i * 0.05}s;
+        }
+      }
+    }
   }
 
   &-color {
@@ -193,6 +222,8 @@
   transition: height 0.3s ease;
   display: grid;
 
+  position: relative;
+
   &:hover {
     height: 36.7rem;
   }
@@ -219,7 +250,6 @@
   }
 
   &__title {
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 2.4rem;
     color: var(--black);
@@ -233,11 +263,18 @@
   }
 
   &__date {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 1.6rem;
     color: #6a676b;
   }
+
+  &__is-liked {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    }
+
+
 }
 
 .button--card {
@@ -293,5 +330,45 @@
   &--right {
     transform: rotate(12deg) translate(8.2rem, 2.4rem);
     z-index: 3;
+  }
+}
+
+.header__navigation-list {
+  display: flex;
+  gap: 5.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32rem;
+  position: relative;
+}
+
+.theme-switcher-item {
+  opacity: 0;
+  transform: translateX(-2rem);
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  &.visible {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.gallery__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  row-gap: 3.4rem;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

@@ -1,5 +1,5 @@
 import Button from "./Button.tsx";
-import {useTheme} from "../../contexts/themeContext.tsx";
+import {useTheme} from "../../contexts/themeContext.ts";
 
 const themeButtons = [
   {
@@ -33,26 +33,24 @@ const ThemeSwitcher = () => {
   const context = useTheme();
 
   if (!context) {
-    throw new Error();
+    throw new Error('ThemeSwitcher must be used within ThemeProvider');
   }
   const { theme: currentTheme, setTheme } = context;
 
   return (
-    <>
-      <ul className="theme-pill">
-        {themeButtons.map(({className, mode, ariaLabel}, index) => (
-          <li key={index}>
-            <Button
-              className={`${className} ${currentTheme === mode ? 'active' : ''}`}
-              mode={mode}
-              ariaLabel={ariaLabel}
-              iconName='check'
-              onClick={() => setTheme(mode)}
-            />
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className="theme-pill">
+      {themeButtons.map(({className, mode, ariaLabel}, index) => (
+        <li key={index}>
+          <Button
+            className={`${className} ${currentTheme === mode ? 'active' : ''}`}
+            mode={mode}
+            ariaLabel={ariaLabel}
+            iconName={currentTheme === mode ? 'check' : undefined}
+            onClick={() => setTheme(mode)}
+          />
+        </li>
+      ))}
+    </ul>
   )
 }
 
