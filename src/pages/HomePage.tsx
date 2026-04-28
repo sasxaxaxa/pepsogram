@@ -1,26 +1,32 @@
-import Button from "../components/ui/Button";
+import Button from "../components/ui/Button.tsx";
+
 const HomePage = () => {
   return (
     <>
-    <div className="card">
-        <div className="card__inner">
-            <img src="src/assets/img/pepsik.jpg" alt="Пэпс" className="card__image" />
+      <div className="page container home-page">
+        <div className="home-page__wrapper">
+          <h1 className="visually-hidden">Главная</h1>
+          <section className="hero">
+            <div className="hero__wrapper">
+              <div className="hero__block hero__block--info">
+                <p className="h1">Господи, храни Пэпса.</p>
+                <span>© Дима</span>
+                <p>
+                  <strong>10 ноября 2025 года</strong>
+                  появился на свет удивительный серый кот с висячими ушами.<br/>Никто не знает его породу.<br/>
+                  Зато все знают: <strong>без Пэпса этот мир был бы скучнее.</strong><br/>
+                  Сейчас он живёт в Москве и ждёт, чтобы вы узнали его лучше.
+                  </p>
+              </div>
+              <div className="hero__block hero__block--info">
 
-            <div className="card__content">
-                <h3 className="card__title">Пэпсик на стуле</h3>
-                <div className="card__bottom">
-                    <span className="card__date">26.04.2026</span>
-                    <Button
-                        iconName="import"
-                        ariaLabel="Скачать"
-                        mode="transparent"
-                        iconSize={28}
-                        className="button--card"
-                    />
-                </div>
+              </div>
+
             </div>
+          </section>
+
         </div>
-    </div>
+      </div>
     </>
   )
 }

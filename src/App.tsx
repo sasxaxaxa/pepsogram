@@ -13,7 +13,6 @@ function App() {
         <Header/>
         <main>
           <Routes>
-            <Route path="/" element={<div>Test</div>}/>
             <Route path="/home" element={<HomePage/>}/>
             <Route path="/gallery" element={<GalleryPage/>}/>
             <Route path="/favourites" element={<div>Понравившееся</div>}/>
