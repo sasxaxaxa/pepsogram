@@ -237,7 +237,6 @@
     font-weight: 400;
     font-size: 1.6rem;
     color: #6a676b;
-
   }
 }
 
@@ -248,12 +247,51 @@
     height: 2.8rem;
     color: #6A676B;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-
+    margin-bottom: -0.4rem;
   }
 
   &:hover {
     .button__icon {
       color: var(--color-default-black);
     }
+  }
+}
+
+.card-stack {
+  display: grid;
+  margin-left: 10.7rem;
+}
+
+.stacked-card {
+  grid-area: 1 / 1;
+  width: 27.8rem;
+  height: 36.7rem;
+  border-radius: 3.2rem;
+  border: var(--border-base);
+  background: var(--color-default-white);
+
+  &__inner {
+    padding: 1.6rem;
+  }
+
+  &__image {
+    width: 24.6rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 2.4rem;
+  }
+
+  &--left {
+    transform: rotate(-12deg) translate(-8.2rem, 2.4rem);
+    z-index: 1;
+  }
+
+  &--center {
+    transform: rotate(0deg);
+    z-index: 2;
+  }
+
+  &--right {
+    transform: rotate(12deg) translate(8.2rem, 2.4rem);
+    z-index: 3;
   }
 }
