@@ -2,7 +2,7 @@ import Button from "./Button.tsx";
 
 type CardProps = {
   title?: string;
-  dataTime:? string;
+  dataTime?: string;
   imgSrc?: string;
   isLiked?: boolean;
 }

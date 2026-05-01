@@ -50,7 +50,12 @@
     background: var(--color-main);
     color: var(--color-default-black);
     border: var(--border-base);
+
+    &:hover {
+      background: var(--color-hover-main);
+    }
   }
+
 
   &--white {
     background: var(--color-default-white);
@@ -86,7 +91,7 @@
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      background: #f8c25a;
+      background: var(--color-hover-main);
     }
 
     .button__icon {
@@ -103,6 +108,14 @@
     align-items: center;
     justify-content: center;
   }
+
+  &-gallery-top {
+    padding: 1.1rem 4.3rem;
+    border-radius: 3.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
 }
 
 .theme {
@@ -139,45 +152,43 @@
     border: var(--border-small);
 
     &.button {
-      &.button {
-        &--yellow {
-          background: var(--color-yellow);
+      &--yellow {
+        background: var(--color-yellow);
 
-          &:hover {
-            background: #F5BE53;
-          }
+        &:hover {
+          background: #F5BE53;
         }
+      }
 
-        &--green {
-          background: var(--color-green);
+      &--green {
+        background: var(--color-green);
 
-          &:hover {
-            background: #8DC99D;
-          }
+        &:hover {
+          background: #8DC99D;
         }
+      }
 
-        &--red {
-          background: var(--color-red);
+      &--red {
+        background: var(--color-red);
 
-          &:hover {
-            background: #E28174;
-          }
+        &:hover {
+          background: #E28174;
         }
+      }
 
-        &--purple {
-          background: var(--color-purple);
+      &--purple {
+        background: var(--color-purple);
 
-          &:hover {
-            background: #B189CE;
-          }
+        &:hover {
+          background: #B189CE;
         }
+      }
 
-        &--orange {
-          background: var(--color-orange);
+      &--orange {
+        background: var(--color-orange);
 
-          &:hover {
-            background: #EE8E58;
-          }
+        &:hover {
+          background: #EE8E58;
         }
       }
     }
@@ -220,12 +231,13 @@
   background: var(--color-default-white);
   overflow: hidden;
   transition: height 0.3s ease;
-  display: grid;
-
+  display: flex;
+  flex-direction: column;
   position: relative;
 
   &:hover {
     height: 36.7rem;
+    z-index: 100;
   }
 
   &__inner {
@@ -272,9 +284,7 @@
     position: absolute;
     top: 2.4rem;
     right: 2.4rem;
-    }
-
-
+  }
 }
 
 .button--card {
@@ -360,6 +370,15 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 3rem;
   row-gap: 3.4rem;
+  grid-auto-rows: 27.8rem;
+  overflow: visible;
+  padding-bottom: 10rem;
+  margin-bottom: -10rem;
+}
+
+.gallery__buttons {
+  display: flex;
+  gap: 3rem;
 }
 
 @keyframes fadeInScale {

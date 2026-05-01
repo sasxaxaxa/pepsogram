@@ -15,6 +15,7 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('theme', theme);
     document.documentElement.style.setProperty('--color-main', `var(--color-${theme})`);
+    document.documentElement.style.setProperty('--color-hover-main', `var(--color-hover-${theme})`);
   }, [theme]);
 
   return (
