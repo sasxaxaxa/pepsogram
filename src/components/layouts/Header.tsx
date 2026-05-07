@@ -1,3 +1,5 @@
+// components/layout/Header.tsx
+import { useState } from 'react';
 import Button from "../ui/Button.tsx";
 import ThemeSwitcher from "../ui/ThemeSwitcher.tsx";
 
@@ -21,14 +23,16 @@ const headerLinks = [
     href: '/community',
     iconName: 'community',
     ariaLabel: 'Сообщество',
-  },
-  {
-    iconName: 'palette',
-    ariaLabel: 'Смена темы',
   }
 ]
 
 const Header = () => {
+  const [isThemeSwitcherVisible, setIsThemeSwitcherVisible] = useState(false);
+
+  const toggleThemeSwitcher = () => {
+    setIsThemeSwitcherVisible(!isThemeSwitcherVisible);
+  };
+
   return (
     <header className="header">
       <div className="container header__inner">
@@ -48,7 +52,19 @@ const Header = () => {
                 />
               </li>
             ))}
-            <li className="theme">
+            <li>
+              <Button
+                iconName='palette'
+                ariaLabel='Смена темы'
+                label=''
+                mode="transparent"
+                location="header"
+                iconSize={36}
+                iconPosition="before"
+                onClick={toggleThemeSwitcher}
+              />
+            </li>
+            <li className={`theme-switcher-item ${isThemeSwitcherVisible ? 'visible' : ''}`}>
               <ThemeSwitcher />
             </li>
           </ul>

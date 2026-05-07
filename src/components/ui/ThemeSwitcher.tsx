@@ -1,49 +1,56 @@
 import Button from "./Button.tsx";
+import {useTheme} from "../../contexts/themeContext.ts";
 
 const themeButtons = [
   {
     className: 'theme-color',
-    mode: 'yellow',
+    mode: 'yellow' as const,
     ariaLabel: 'Желтая тема',
   },
   {
     className: 'theme-color',
-    mode: 'green',
+    mode: 'green' as const,
     ariaLabel: 'Зеленая тема',
   },
   {
     className: 'theme-color',
-    mode: 'red',
+    mode: 'red' as const,
     ariaLabel: 'Красная тема',
   },
   {
     className: 'theme-color',
-    mode: 'purple',
+    mode: 'purple' as const,
     ariaLabel: 'Фиолетовая тема',
   },
   {
     className: 'theme-color',
-    mode: 'orange',
+    mode: 'orange' as const,
     ariaLabel: 'Оранжевая тема',
   }
 ]
 
 const ThemeSwitcher = () => {
+  const context = useTheme();
+
+  if (!context) {
+    throw new Error('ThemeSwitcher must be used within ThemeProvider');
+  }
+  const { theme: currentTheme, setTheme } = context;
+
   return (
-    <>
-      <ul className="theme-pill">
-        {themeButtons.map(({className, mode, ariaLabel}, index) => (
-          <li key={index}>
-            <Button
-              className={className}
-              mode={mode}
-              ariaLabel={ariaLabel}
-              iconName='check'
-            />
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className="theme-pill">
+      {themeButtons.map(({className, mode, ariaLabel}, index) => (
+        <li key={index}>
+          <Button
+            className={`${className} ${currentTheme === mode ? 'active' : ''}`}
+            mode={mode}
+            ariaLabel={ariaLabel}
+            iconName={currentTheme === mode ? 'check' : undefined}
+            onClick={() => setTheme(mode)}
+          />
+        </li>
+      ))}
+    </ul>
   )
 }
 

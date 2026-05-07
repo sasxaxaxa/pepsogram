@@ -12,8 +12,16 @@
   --border-base: 2px solid var(--color-default-black);
   --border-small: 1px solid var(--color-default-black);
 
+
+  --color-hover-red: #E28174;
+  --color-hover-orange: #EE8E58;
+  --color-hover-yellow: #F5BE53;
+  --color-hover-green: #8DC99D;
+  --color-hover-purple: #B189CE;
+
   //themes
   --color-main: var(--color-yellow);
+  --color-hover-main: var(--color-hover-yellow);
 }
 
 html {
