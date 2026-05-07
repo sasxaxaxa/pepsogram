@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Button from "../ui/Button.tsx";
 import ThemeSwitcher from "../ui/ThemeSwitcher.tsx";
+import Logo from "../ui/Logo.tsx";
 
 const headerLinks = [
   {
@@ -36,6 +37,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header__inner">
+        <Logo />
+
+
         <nav className="header__navigation">
           <ul className="header__navigation-list">
             {headerLinks.map(({href, iconName, ariaLabel}, index) => (
@@ -47,7 +51,7 @@ const Header = () => {
                   label=''
                   mode="transparent"
                   location="header"
-                  iconSize={36}
+                  iconSize="3.6rem"
                   iconPosition="before"
                 />
               </li>
@@ -59,7 +63,7 @@ const Header = () => {
                 label=''
                 mode="transparent"
                 location="header"
-                iconSize={36}
+                iconSize="3.6rem"
                 iconPosition="before"
                 onClick={toggleThemeSwitcher}
               />
@@ -76,7 +80,7 @@ const Header = () => {
           label=''
           mode="primary"
           location="header--alt"
-          iconSize={31}
+          iconSize="3.1rem"
           iconPosition="before"
         />
       </div>

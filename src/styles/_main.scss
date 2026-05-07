@@ -1,4 +1,5 @@
-@import "global";
+@use "global";
+@use "fonts.scss";
 
 .container {
   max-width: 120rem;
@@ -18,7 +19,7 @@
   &__navigation {
     background: var(--color-main);
     border-radius: var(--br-s);
-    width: 109.8rem;
+    width: 99.5rem;
     height: 6.4rem;
     display: flex;
     align-items: center;
@@ -30,7 +31,7 @@
       gap: 5.2rem;
       align-items: center;
       justify-content: center;
-      margin-left: 32rem;
+      margin-left: 25.8rem;
     }
   }
 
@@ -466,15 +467,6 @@
     transform: rotate(12deg) translate(8.2rem, 2.4rem);
     z-index: 3;
   }
-}
-
-.header__navigation-list {
-  display: flex;
-  gap: 5.2rem;
-  align-items: center;
-  justify-content: center;
-  margin-left: 32rem;
-  position: relative;
 }
 
 .theme-switcher-item {

@@ -44,6 +44,7 @@ const ThemeSwitcher = () => {
           <Button
             className={`${className} ${currentTheme === mode ? 'active' : ''}`}
             mode={mode}
+            iconSize="2.8rem"
             ariaLabel={ariaLabel}
             iconName={currentTheme === mode ? 'check' : undefined}
             onClick={() => setTheme(mode)}
