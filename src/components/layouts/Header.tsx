@@ -51,7 +51,7 @@ const Header = () => {
                   label=''
                   mode="transparent"
                   location="header"
-                  iconSize={36}
+                  iconSize="3.6rem"
                   iconPosition="before"
                 />
               </li>
@@ -63,7 +63,7 @@ const Header = () => {
                 label=''
                 mode="transparent"
                 location="header"
-                iconSize={36}
+                iconSize="3.6rem"
                 iconPosition="before"
                 onClick={toggleThemeSwitcher}
               />
@@ -80,7 +80,7 @@ const Header = () => {
           label=''
           mode="primary"
           location="header--alt"
-          iconSize={31}
+          iconSize="3.1rem"
           iconPosition="before"
         />
       </div>
