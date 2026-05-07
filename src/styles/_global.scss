@@ -9,10 +9,12 @@
   --color-default-white: #FFFAF2;
   --color-default-black: #2E2B2F;
 
-  --br-m: 64px;
+  --br-xs: 1.2rem;
+  --br-s: 1.6rem;
+  --br-m: 6.4rem;
   --br-xl: 50%;
-  --border-base: 2px solid var(--color-default-black);
-  --border-small: 1px solid var(--color-default-black);
+  --border-base: 0.2rem solid var(--color-default-black);
+  --border-small: 0.1rem solid var(--color-default-black);
 
 
   --color-hover-red: #E28174;
