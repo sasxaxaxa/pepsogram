@@ -190,7 +190,7 @@
   border: var(--border-base);
   background: var(--color-default-white);
   overflow: hidden;
-  transition: height  0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: grid;
 
   &:hover {
@@ -259,7 +259,6 @@
 
 .card-stack {
   display: grid;
-  margin-left: 10.7rem;
   width: 27.8rem;
   height: 36.7rem;
 
@@ -267,15 +266,23 @@
     .stacked-card--left {
       transform: rotate(-12deg) translate(-16rem, 2.4rem);
     }
+
     .stacked-card--center {
-        transform: translateY(-1rem);
-        z-index: 3;
-      }
+      transform: translateY(-1rem);
+      z-index: 3;
+    }
 
     .stacked-card--right {
       transform: rotate(12deg) translate(16rem, 2.4rem);
     }
   }
+}
+
+.card-stack {
+  display: grid;
+  margin-left: 10.7rem;
+  width: 27.8rem;
+  height: 36.7rem;
 }
 
 .stacked-card {
@@ -285,7 +292,7 @@
   border-radius: 3.2rem;
   border: var(--border-base);
   background: var(--color-default-white);
-  transition: transform  0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
   &__inner {
     padding: 1.6rem;
@@ -298,7 +305,7 @@
   }
 
   &--left {
-    transform: rotate(-12deg) translate(-8.2rem, 2.4rem);
+    transform: rotate(-12deg) translate(-8rem, 2.4rem);
     z-index: 1;
   }
 
@@ -308,7 +315,8 @@
   }
 
   &--right {
-    transform: rotate(12deg) translate(8.2rem, 2.4rem);
+    transform: rotate(12deg) translate(8rem, 2.4rem);
     z-index: 3;
   }
 }
+
