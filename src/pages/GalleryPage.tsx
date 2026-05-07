@@ -29,49 +29,49 @@ const GalleryPage = () => {
             <Card
               title="Пэпсик на стуле"
               dataTime="26.04.2026"
-              imgSrc="src/assets/img/pepsik.jpg"
+              imgSrc="/media-temp/img/pepsik.jpg"
               isLiked={true}
             />
             <Card
               title="Пэпсик на стуле"
               dataTime="26.04.2026"
-              imgSrc="src/assets/img/pepsik.jpg"
+              imgSrc="/media-temp/img/pepsik.jpg"
               isLiked={true}
             />
             <Card
               title="Пэпсик на стуле"
               dataTime="26.04.2026"
-              imgSrc="src/assets/img/pepsik.jpg"
+              imgSrc="/media-temp/img/pepsik.jpg"
               isLiked={true}
             />
             <Card
               title="Пэпсик на стуле"
               dataTime="26.04.2026"
-              imgSrc="src/assets/img/pepsik.jpg"
+              imgSrc="/media-temp/img/pepsik.jpg"
               isLiked={true}
             />
             <Card
               title="Пэпсик на стуле"
               dataTime="26.04.2026"
-              imgSrc="src/assets/img/pepsik.jpg"
+              imgSrc="/media-temp/img/pepsik.jpg"
               isLiked={true}
             />
             <Card
               title="Пэпсик на стуле"
               dataTime="26.04.2026"
-              imgSrc="src/assets/img/pepsik.jpg"
+              imgSrc="/media-temp/img/pepsik.jpg"
               isLiked={true}
             />
             <Card
               title="Пэпсик на стуле"
               dataTime="26.04.2026"
-              imgSrc="src/assets/img/pepsik.jpg"
+              imgSrc="/media-temp/img/pepsik.jpg"
               isLiked={true}
             />
             <Card
               title="Пэпсик на стуле"
               dataTime="26.04.2026"
-              imgSrc="src/assets/img/pepsik.jpg"
+              imgSrc="/media-temp/img/pepsik.jpg"
               isLiked={true}
             />
           </div>

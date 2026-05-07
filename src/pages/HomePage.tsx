@@ -36,7 +36,7 @@ const HomePage = () => {
                                         className="hero__button--prev"
                                         location="hero-slider"
                                     />
-                                    <img src="src\assets\img\pepsik.jpg" alt="Пэпс" className="hero__image"/>
+                                    <img src="/media-temp/img/pepsik.jpg" alt="Пэпс" className="hero__image"/>
                                     <Button
                                         iconName="next-big"
                                         mode="white"

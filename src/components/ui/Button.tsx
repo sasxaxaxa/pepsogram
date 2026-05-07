@@ -50,7 +50,7 @@ const Button = (props: ButtonProps) => {
         role="img"
         aria-label={ariaLabel || title}
       >
-        <use href={`/src/assets/icons/sprite.svg#icon-${iconName}`} />
+        <use href={`/media-temp/icons/sprite.svg#icon-${iconName}`} />
       </svg>
     )
     : iconName;
