@@ -17,7 +17,7 @@
 
   &__navigation {
     background: var(--color-main);
-    border-radius: var(--br-m);
+    border-radius: var(--br-s);
     width: 109.8rem;
     height: 6.4rem;
     display: flex;
@@ -68,7 +68,7 @@
     justify-content: center;
     align-items: center;
     padding: 0.7rem;
-    border-radius: var(--br-m);
+    border-radius: var(--br-s);
     border: 2px solid transparent;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -87,7 +87,7 @@
 
   &-header--alt {
     padding: 1.33rem;
-    border-radius: var(--br-m);
+    border-radius: var(--br-s);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
@@ -103,7 +103,7 @@
 
   &-card__top {
     padding: 0.8rem;
-    border-radius: var(--br-m);
+    border-radius: var(--br-s);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +111,7 @@
 
   &-gallery-top {
     padding: 1.1rem 4.3rem;
-    border-radius: 3.2rem;
+    border-radius: var(--br-s);
     font-size: 2rem;
     font-weight: 500;
   }
@@ -121,7 +121,7 @@
 .theme {
   &-pill {
     background: var(--color-default-white);
-    border-radius: var(--br-m);
+    border-radius: var(--br-s);
     border: var(--border-base);
     display: flex;
     align-items: center;
@@ -218,15 +218,120 @@
   }
 
   &__block--info {
-
+    border: var(--border-base);
+    border-radius: var(--br-s);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-between;
+    height: 46.7rem;
+    width: auto;
+    padding: 2.8rem 4.2rem 4.3rem;
   }
 
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+
+  &__block-top {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &__author {
+    font-weight: 400;
+    font-size: 2rem
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  .hero__counter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    border: var(--border-base);
+    border-radius: var(--br-xs);
+    padding: 1.8rem 3.65rem;
+    background-color: var(--color-main);
+  }
+
+  .hero__counter-number {
+    position: absolute;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--border-base);
+    border-radius: var(--br-xs);
+    background-color: var(--color-default-white);
+    font-weight: 600;
+    font-size: 3.2rem;
+  }
+
+  .hero__counter-number-1 {
+    left: 19rem;
+  }
+
+  .hero__counter-number-2 {
+    right: 8.5rem;
+  }
+
+  .hero__counter-label,
+  .hero__counter-unit {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  &__block--media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__row {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    height: 38rem;
+    width: auto;
+    border-radius: var(--br-s);
+  }
+
+  &__button--prev, &__button--next {
+    border-radius: var(--br-s);
+    height: 6rem;
+    width: 6rem;
+  }
+
+  &__button--prev svg {
+    transform: rotate(180deg);
+  }
+
+  &__button--view-all {
+    padding: 1.8rem;
+    width: 38rem;
+    border-radius: var(--br-s);
+    font-weight: 600;
+    font-size: 2rem;
+  }
 }
 
 .card {
   width: 27.8rem;
   height: 27.8rem;
-  border-radius: 3.2rem;
+  border-radius: var(--br-s);
   border: var(--border-base);
   background: var(--color-default-white);
   overflow: hidden;
@@ -249,7 +354,7 @@
   &__image {
     width: 24.6rem;
     aspect-ratio: 1 / 1;
-    border-radius: 2.4rem;
+    border-radius: var(--br-xs);
   }
 
   &__content {
@@ -332,10 +437,10 @@
   grid-area: 1 / 1;
   width: 27.8rem;
   height: 36.7rem;
-  border-radius: 3.2rem;
+  border-radius: var(--br-s);
   border: var(--border-base);
   background: var(--color-default-white);
-  transition: transform  0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
   &__inner {
     padding: 1.6rem;
@@ -344,7 +449,7 @@
   &__image {
     width: 24.6rem;
     aspect-ratio: 1 / 1;
-    border-radius: 2.4rem;
+    border-radius: var(--br-s);
   }
 
   &--left {
