@@ -1,3 +1,5 @@
+@use "fonts.scss";
+
 :root {
   --color-red: #F2A297;
   --color-orange: #F9A372;
@@ -29,7 +31,7 @@ html {
   color: var(--color-default-black);
   background-color: var(--color-default-white);
 
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-style: normal;
 }

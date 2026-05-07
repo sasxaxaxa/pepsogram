@@ -13,7 +13,7 @@ type ButtonProps = {
   iconName?: string | ReactNode;
   iconPosition?: IconPosition;
   className?: string;
-  iconSize?: number;
+  iconSize?: string;
 } & (
   | { href?: string; onClick?: never; type?: never }
   | { href?: never; onClick?: () => void; type?: 'button' | 'submit' | 'reset' }
@@ -29,7 +29,7 @@ const Button = (props: ButtonProps) => {
     iconName,
     iconPosition = 'after',
     className,
-    iconSize = 24,
+    iconSize = '',
     ...rest
   } = props;
 

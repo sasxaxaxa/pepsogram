@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Button from "../ui/Button.tsx";
 import ThemeSwitcher from "../ui/ThemeSwitcher.tsx";
+import Logo from "../ui/Logo.tsx";
 
 const headerLinks = [
   {
@@ -36,6 +37,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header__inner">
+        <Logo />
+
+
         <nav className="header__navigation">
           <ul className="header__navigation-list">
             {headerLinks.map(({href, iconName, ariaLabel}, index) => (

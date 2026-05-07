@@ -24,6 +24,7 @@ const Card = (props: CardProps) => {
           <div className="card__is-liked">
             <Button
               iconName="like"
+              iconSize="2.8rem"
               ariaLabel="В избранное"
               mode="white"
               location="card__top"
@@ -39,7 +40,7 @@ const Card = (props: CardProps) => {
                 iconName="import"
                 ariaLabel="Скачать"
                 mode="transparent"
-                iconSize={28}
+                iconSize="2.8rem"
                 className="button--card"
               />
             </div>
