@@ -75,7 +75,6 @@ const GalleryPage = () => {
               isLiked={true}
             />
           </div>
-          <CardStack />
         </div>
       </div>
     </>
