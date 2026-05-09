@@ -5,6 +5,7 @@ import Header from "./components/layouts/Header.tsx";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import HomePage from './pages/HomePage.tsx'
 import GalleryPage from './pages/GalleryPage.tsx'
+import RegistrationPage from "./pages/RegistrationPage.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/home" element={<HomePage/>}/>
             <Route path="/gallery" element={<GalleryPage/>}/>
+            <Route path="/registration" element={<RegistrationPage/>}/>
             <Route path="/favourites" element={<div>Понравившееся</div>}/>
             <Route path="/community" element={<div>Сообщество</div>}/>
             <Route path="/user" element={<div>Профиль</div>}/>
