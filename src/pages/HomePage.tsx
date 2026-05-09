@@ -1,4 +1,5 @@
 import Button from "../components/ui/Button.tsx";
+import CardStack from "../components/ui/CardStack.tsx";
 
 const HomePage = () => {
     return (
@@ -15,16 +16,16 @@ const HomePage = () => {
                                 </div>
                                 <p className="hero__description">
                                     <strong>10 ноября 2025 года </strong>
-                                    появился на свет удивительный серый кот с висячими ушами.<br/>Никто не знает его породу.<br/>
-                                    Зато все знают: <strong>без Пэпса этот мир был бы скучнее.</strong><br/>
-                                    Сейчас он живёт в Москве и ждёт, чтобы вы узнали его лучше.
+                                    появился на свет этот удивительный серый кот с висячими ушами.<br/>Никто не знает его породу.<br/>
+                                    Зато все знают: <strong>без Пэпса этот мир был бы скучнее.</strong><br/><br/>
+                                    Сейчас Пэпс живёт в Москве и ждёт, чтобы вы узнали его лучше.
                                 </p>
                                 <div className="hero__counter">
                                     <span className="hero__counter-label">Сегодня Пэпсу уже</span>
                                     <span className="hero__counter-number hero__counter-number-1">5</span>
-                                    <span className="hero__counter-unit">месяцев</span>
+                                    <span className="hero__counter-unit hero__counter-unit--months">месяцев</span>
                                     <span className="hero__counter-number hero__counter-number-2">25</span>
-                                    <span className="hero__counter-unit">дней</span>
+                                    <span className="hero__counter-unit hero__counter-unit--days">дней</span>
                                 </div>
                             </div>
                             <div className="hero__block hero__block--media">
@@ -36,7 +37,9 @@ const HomePage = () => {
                                         className="hero__button--prev"
                                         location="hero-slider"
                                     />
-                                    <img src="/media-temp/img/pepsik.jpg" alt="Пэпс" className="hero__image"/>
+                                    <div className="hero__image-container">
+                                        <img src="/media-temp/img/pepsik.jpg" alt="Пэпс" className="hero__image"/>
+                                    </div>
                                     <Button
                                         iconName="next-big"
                                         mode="white"
@@ -55,9 +58,28 @@ const HomePage = () => {
                         </div>
                     </section>
                 </div>
+                <div className="pepso-collections">
+                    <h2 className="pepso-collections__title">Пепсо-Подборки</h2>
+                    <div className="pepso-collections__cards-row">
+                        <CardStack/>
+                        <CardStack/>
+                    </div>
+                    <div className="pepso-collections__buttons-row">
+                        <Button
+                            mode="primary"
+                            className="pepso-collections__button"
+                            label="Смотреть коллекцию"
+                        />
+                        <Button
+                            mode="primary"
+                            className="pepso-collections__button"
+                            label="Смотреть коллекцию"
+                        />
+                    </div>
+                    </div>
             </div>
-        </>
-    )
-}
+                </>
+                )
+                }
 
-export default HomePage;
+                export default HomePage;
