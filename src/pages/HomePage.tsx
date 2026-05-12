@@ -68,12 +68,12 @@ const HomePage = () => {
                         <Button
                             mode="primary"
                             className="pepso-collections__button"
-                            label="Смотреть коллекцию"
+                            label="Название подборки"
                         />
                         <Button
                             mode="primary"
                             className="pepso-collections__button"
-                            label="Смотреть коллекцию"
+                            label="Название подборки"
                         />
                     </div>
                     </div>
