@@ -31,7 +31,7 @@
 }
 
 html {
-  font-size: calc(100vw / 1440 * 10);
+  font-size: min(calc(100vw / 1440 * 10), 16px);
   color: var(--color-default-black);
   background-color: var(--color-default-white);
 
